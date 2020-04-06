@@ -1,0 +1,22 @@
+<h1>Ashley's Boyfriend Management Console</h1>
+
+<h3>Options</h3>
+<ul>
+	{{ range $key, $value := . }}
+	<li>Press here for <a href="/action/{{ $key }}">{{ $value.GetName }}</a>[<a href="/edit/{{ $key }}">edit</a>]</li>
+	{{ end }}
+</ul>
+
+<form id="createForm" action="/" method=POST>
+	<div><input type="text" id="nameInput"></div>
+	<div><input type="submit" value="Create"></div>
+</form>
+
+<script>
+var nameInput = document.getElementById('nameInput');
+var createForm = document.getElementById('createForm');
+
+nameInput.addEventListener("input", function (e) {
+    createForm.action="/edit/"+this.value;
+});
+</script>

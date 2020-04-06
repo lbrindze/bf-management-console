@@ -1,0 +1,8 @@
+<h1>Ashley's Boyfriend Management Console</h1>
+
+<h3>Options</h3>
+<ul>
+	{{ range $key, $value := . }}
+	<li><a href="/action/{{ $key }}">{{ $value.GetName }}</a></li>
+	{{ end }}
+</ul>
