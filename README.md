@@ -1,6 +1,6 @@
 ## Boyfriend Management Console
 This is a Silly Valentine's day app.  User (i.e. the partner you are trying to please) can add tasks with messages.
-When a user asks for a task to be completed, server calls out to twilio api to send a text message to the boyfriend who is being managed by this webapp
+When a user asks for a task to be completed, server calls out to twilio api to send a text message to the boyfriend/girlfriend who is being managed by this webapp
 Is this simpler than just sending a text message? probably not, but it only about 2 hours to make and was a nice novelty gift.
 
 
